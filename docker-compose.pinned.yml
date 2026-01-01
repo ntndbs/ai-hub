@@ -1,0 +1,28 @@
+services:
+  litellm:
+    image: ghcr.io/berriai/litellm@sha256:fff53d2f4fe65fc9baaee005a31aaf477c734b638164e456d587667e185791a0
+    platform: linux/amd64
+    ports:
+      - "4000:4000"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      LITELLM_LOG: info
+    volumes:
+      # überschreibt die DEFAULT config, die LiteLLM offenbar wirklich nutzt
+      - ./litellm_config.yml:/app/proxy_server_config.yaml
+    command: ["--config", "/app/proxy_server_config.yaml", "--port", "4000", "--host", "0.0.0.0"]
+
+  openwebui:
+    image: ghcr.io/open-webui/open-webui@sha256:18c1475e636245e2f439b59b4a2b38e1965c881856092d21e5efc38da7e1dac3
+    ports:
+      - "8501:8080"
+    environment:
+      OPENAI_API_BASE_URL: http://litellm:4000/v1
+      OPENAI_API_KEY: dummy
+    depends_on:
+      - litellm
+    volumes:
+      - openwebui:/app/backend/data
+
+volumes:
+  openwebui:

@@ -1,0 +1,83 @@
+model_list:
+  # =========================
+  # High-End / Flagship
+  # =========================
+  - model_name: 01_flagship_gpt-5.2
+    litellm_params:
+      model: gpt-5.2-chat-latest
+      stream: true
+
+  # =========================
+  # Fast & Cheap (Default)
+  # =========================
+  - model_name: 02_fast_gpt-4o-mini
+    litellm_params:
+      model: gpt-4o-mini-2024-07-18
+      stream: true
+
+  # =========================
+  # Reasoning / Deliberate
+  # =========================
+  - model_name: 03_reason_o3
+    litellm_params:
+      model: o3-2025-04-16
+      stream: false
+
+  # =========================
+  # Long Context
+  # =========================
+  - model_name: 04_long-context_gpt-4.1-long-context
+    litellm_params:
+      model: gpt-4.1-long-context
+      stream: true
+
+  # =========================
+  # Multimodal / Vision
+  # =========================
+  - model_name: 05_vision_gpt-4o
+    litellm_params:
+      model: gpt-4o-2024-11-20
+      stream: true
+
+  # =========================
+  # Search / Web
+  # =========================
+  - model_name: 06_search_gpt-4o-search
+    litellm_params:
+      model: gpt-4o-search-preview-2025-03-11
+      stream: false
+
+  # =========================
+  # Coding Specialist
+  # =========================
+  - model_name: 07_coder_gpt-5.1-codex
+    litellm_params:
+      model: gpt-5.1-codex
+      stream: false
+
+  # =========================
+  # Image Generation
+  # =========================
+  - model_name: 90_image_gpt-image-1.5
+    litellm_params:
+      model: gpt-image-1.5
+
+  # =========================
+  # Embeddings
+  # =========================
+  - model_name: 91_embed_text-embedding-3-small
+    litellm_params:
+      model: text-embedding-3-small
+
+  # =========================
+  # Moderation
+  # =========================
+  - model_name: 92_moderation_omni-moderation-latest
+    litellm_params:
+      model: omni-moderation-latest
+
+
+litellm_settings:
+  set_verbose: true
+  drop_params: true
+  request_timeout: 60
