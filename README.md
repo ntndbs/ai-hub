@@ -46,10 +46,6 @@ Switching or adding providers doesn’t require changes in the UI or downstream 
 </p>
 
 ## Screenshots / Proof
-### Start page
-<p>
-  <a href="assets/ai-hub_start.png"><img src="assets/ai-hub_start.png" width="420" /></a>
-</p>
 ### Sorted model portfolio in OpenWebUI
 <p>
   <a href="assets/assets/ai-hub_modellist.png"><img src="assets/ai-hub_modellist.png" width="420" /></a>
