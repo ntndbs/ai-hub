@@ -40,12 +40,14 @@ Switching or adding providers doesn’t require changes in the UI or downstream 
 - **OpenWebUI** (UI) → talks to →
 - **LiteLLM Proxy** (routing / config / single API) → talks to →
 - **LLM providers** (OpenAI today, others can be configured)
-![Architecture](assets/ai-hub_architecture.png)
+<p>
+  <a href="assets/ai-hub_architecture.png"><img src="asset/sai-hub_architecture.png" width="800" /></a>
+</p>
 
 ## Screenshots / Proof
 ### Sorted model portfolio in OpenWebUI
 ![Sorted models](assets/ai-hub_modellist.png)
-![Flagship model GPT-5.2](assets/ai-hub_modellist.png)
+![Flagship model GPT-5.2](assets/ai-hub_flagship.png)
 ![Web search example](assets/ai-hub_websearch.png)
 
 ---
