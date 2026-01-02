@@ -1,7 +1,8 @@
 # AI Hub (LiteLLM + OpenWebUI)
 A lightweight, open-source, provider-agnostic AI hub for running and comparing a curated model portfolio behind a single API endpoint.
-
-![Starting page/ Chat interface](assets/ai-hub_start.png)
+<p>
+  <a href="assets/ai-hub_start.png"><img src="assets/ai-hub_start.png" width="800" /></a>
+</p>
 
 ## Why this exists
 Most teams don’t fail because models are bad — they fail because access, routing, and operational guardrails are messy:
@@ -41,14 +42,19 @@ Switching or adding providers doesn’t require changes in the UI or downstream 
 - **LiteLLM Proxy** (routing / config / single API) → talks to →
 - **LLM providers** (OpenAI today, others can be configured)
 <p>
-  <a href="assets/ai-hub_architecture.png"><img src="asset/sai-hub_architecture.png" width="800" /></a>
+  <a href="assets/ai-hub_architecture.png"><img src="asset/ai-hub_architecture.png" width="800" /></a>
 </p>
 
 ## Screenshots / Proof
 ### Sorted model portfolio in OpenWebUI
-![Sorted models](assets/ai-hub_modellist.png)
-![Flagship model GPT-5.2](assets/ai-hub_flagship.png)
-![Web search example](assets/ai-hub_websearch.png)
+<p>
+  <a href="assets/ai-hub_start.png"><img src="assets/ai-hub_start.png" width="420" /></a>
+  <a href="assets/assets/ai-hub_modellist.png"><img src="assets/ai-hub_modellist.png" width="420" /></a>
+</p>
+<p>
+  <a href="assets/ai-hub_flagship.png"><img src="assets/ai-hub_flagship.png" width="420" /></a>
+  <a href="assets/ai-hub_websearch.png"><img src="assets/ai-hub_websearch.png" width="420" /></a>
+</p>
 
 ---
 ## Quick start (local)
